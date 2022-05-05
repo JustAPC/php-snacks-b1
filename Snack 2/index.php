@@ -37,7 +37,7 @@ $accessDenied = "Accesso negato";
     </div>
     <div>
         <?php 
-         if(strlen($name) > 3 && strpos($mail, '@') == true && strpos($mail, '.') == true && is_int($age) == true && $age !== 0){
+         if(strlen($name) > 3 && strpos($mail, '@') == true && strpos($mail, '.') == true && is_numeric($age)){
             echo $accessGranted;
         } else {
             echo $accessDenied;
