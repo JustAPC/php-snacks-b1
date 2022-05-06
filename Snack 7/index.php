@@ -16,7 +16,7 @@ $alunni = [
         "cognome" => "Biondi",
         "voti" => [
             4 , 5 , 5 , 2
-        ]
+        ],
         ],
     [
         "nome" => "Francesco",
