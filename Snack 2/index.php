@@ -1,12 +1,12 @@
-<!-- Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
+<!-- Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) 
+che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. 
+Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
 
 <?php 
  
 $name = ( isset($_GET['name']) ) ? $_GET['name'] : '' ;
 $mail = ( isset($_GET['mail']) ) ? $_GET['mail'] : '' ;
-$age = ( isset($_GET['mail']) ) ? $_GET['mail'] : '' ;
-
-$age = intval ($age);
+$age = ( isset($_GET['mail']) ) ? (int)$_GET['mail'] : '' ;
 
 $accessGranted = "Accesso riuscito";
 $accessDenied = "Accesso negato";
